@@ -39,6 +39,10 @@
         {
           "action": "share",
           "type": "sense_eeg"
+        },
+        {
+          "action": "read",
+          "type": "seer_report"
         }
       ],
       "care_giver": [
@@ -50,10 +54,6 @@
       "patient": [
         {
           "action": "read",
-          "type": "seer_report"
-        },
-        {
-          "action": "share",
           "type": "seer_report"
         }
       ]
