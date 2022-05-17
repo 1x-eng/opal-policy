@@ -1,0 +1,61 @@
+{
+    "users": {
+      "johndoe": {
+        "roles": ["admin"],
+        "location": {
+          "country": "AU",
+          "ip": "1.0.4.0"
+        }
+      },
+      "janedoe": {
+        "roles": ["clinician", "care_giver"],
+        "location": {
+          "country": "AU",
+          "ip": "1.0.4.0"
+        }
+      },
+      "someotherdoe": {
+        "roles": ["patient"],
+        "location": {
+          "country": "AU",
+          "ip": "1.0.4.0"
+        }
+      }
+    },
+    "role_permissions": {
+      "clinician": [
+        {
+          "action": "read",
+          "type": "sense_ecg"
+        },
+        {
+          "action": "read",
+          "type": "sense_eeg"
+        },
+        {
+          "action": "share",
+          "type": "sense_ecg"
+        },
+        {
+          "action": "share",
+          "type": "sense_eeg"
+        }
+      ],
+      "care_giver": [
+        {
+          "action": "read",
+          "type": "seer_report"
+        }
+      ],
+      "patient": [
+        {
+          "action": "read",
+          "type": "seer_report"
+        },
+        {
+          "action": "share",
+          "type": "seer_report"
+        }
+      ]
+    }
+  }
