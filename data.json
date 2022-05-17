@@ -39,10 +39,6 @@
         {
           "action": "share",
           "type": "sense_eeg"
-        },
-        {
-          "action": "read",
-          "type": "seer_report"
         }
       ],
       "care_giver": [
