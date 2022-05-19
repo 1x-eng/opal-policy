@@ -20,6 +20,14 @@
           "country": "AU",
           "ip": "1.0.4.0"
         }
+      },
+      "someotherdoe1": {
+        "roles": ["caregiver"],
+        "location": {
+          "country": "AU",
+          "ip": "1.0.4.0"
+        }
+        
       }
     },
     "role_permissions": {
@@ -48,17 +56,14 @@
       "care_giver": [
         {
           "action": "read",
-          "type": "seer_report"
+          "type": "seer_report",
+          "id": 1
         }
       ],
       "patient": [
         {
           "action": "read",
           "type": "seer_report"
-        },
-        {
-          "action": "read",
-          "type": "sense_eeg"
         }
       ]
     }
